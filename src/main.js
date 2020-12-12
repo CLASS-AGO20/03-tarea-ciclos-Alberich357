@@ -17,6 +17,19 @@ export default class App {
             }
             return suma;
             }
+            esPrimo(numero){
+                let i;
+                if(numero == 0 | numero == 1 | numero == 4){
+                    return false;
+                }
+            
+                for(i=2; i<numero/2; i++){
+                    if(numero % i == 0){
+                        return false;
+                    }
+                }
+                return true;
+                }
     }
 
 let app = new App();
@@ -28,3 +41,6 @@ console.log("Funcion sumatoria de la serie dos:");
 console.log(app.sumatoriaSerieDos(5));
 console.log(app.sumatoriaSerieDos(10));
 console.log(app.sumatoriaSerieDos(15));
+console.log("Funcion si un numero es primo o no:");
+console.log(app.esPrimo(0));
+console.log(app.esPrimo(7));
