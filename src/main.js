@@ -30,6 +30,22 @@ export default class App {
                 }
                 return true;
                 }
+                obtenerMultiplos(inicio, fin){
+                    if(inicio > fin){
+                        let t = inicio;
+                        inicio = fin;
+                        fin = t;
+                    }
+                    let i = inicio;
+                    let string = "";
+                    do {
+                        if(i % 3 == 0)
+                            string += i.toString();
+            
+                        i++;
+                    }while(i<=fin);
+                    return string;
+                }  
     }
 
 let app = new App();
@@ -44,3 +60,5 @@ console.log(app.sumatoriaSerieDos(15));
 console.log("Funcion si un numero es primo o no:");
 console.log(app.esPrimo(0));
 console.log(app.esPrimo(7));
+console.log("Funcion multiplos de un rango convertidos a string:");
+console.log(app.obtenerMultiplos(20,35));
