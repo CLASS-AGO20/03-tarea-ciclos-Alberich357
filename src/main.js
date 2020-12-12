@@ -57,7 +57,7 @@ console.log("Funcion sumatoria de la serie dos:");
 console.log(app.sumatoriaSerieDos(5));
 console.log(app.sumatoriaSerieDos(10));
 console.log(app.sumatoriaSerieDos(15));
-console.log("Funcion si un numero es primo o no:");
+console.log("Funcion si es primo:");
 console.log(app.esPrimo(0));
 console.log(app.esPrimo(7));
 console.log("Funcion multiplos de un rango convertidos a string:");
